@@ -1,0 +1,17 @@
+{
+  "name": "go.andrewthorp.com",
+  "version": "0.0.1",
+  "description": "Personal website in Go.",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-sass": "^0.7.2"
+  },
+  "scripts": {
+    "test": "go test"
+  },
+  "author": "Andrew Thorp",
+  "license": "MIT"
+}
