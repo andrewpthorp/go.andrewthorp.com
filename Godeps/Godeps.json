@@ -1,0 +1,25 @@
+{
+	"ImportPath": "github.com/andrewpthorp/go.andrewthorp.com",
+	"GoVersion": "go1.2.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/inject",
+			"Comment": "v1.0-rc1-4-g4b81725",
+			"Rev": "4b8172520a03fa190f427bbd284db01b459bfce7"
+		},
+		{
+			"ImportPath": "github.com/codegangsta/martini",
+			"Comment": "v0.1-105-gcab2ee6",
+			"Rev": "cab2ee60a6dfb2ab2cd742fbc0ba35b135b1205d"
+		},
+		{
+			"ImportPath": "github.com/go-martini/martini",
+			"Comment": "v1.0-27-g6d22115",
+			"Rev": "6d22115736ff94392c11684f7cbe1a5143430ee3"
+		},
+		{
+			"ImportPath": "github.com/martini-contrib/render",
+			"Rev": "68eb61a5313c3eff5625a16f6eee8f29b4835ff7"
+		}
+	]
+}

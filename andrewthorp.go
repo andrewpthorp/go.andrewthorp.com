@@ -1,30 +1,18 @@
 package main
 
 import (
-  "html/template"
-  "log"
-  "net/http"
-)
+  "github.com/go-martini/martini"
+  "github.com/martini-contrib/render"
+ )
 
 func main() {
-  http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("app/assets/css"))))
-  http.Handle("/statics/", http.StripPrefix("/statics/", http.FileServer(http.Dir("app/statics"))))
-  http.HandleFunc("/", serveSite)
-  log.Println("Listening...")
-  http.ListenAndServe(":8080", nil)
-}
+  m := martini.Classic()
+  m.Use(martini.Static("app/assets/css"))
+  m.Use(render.Renderer(render.Options{Directory: "app/templates"}))
 
-func serveSite(w http.ResponseWriter, r *http.Request) {
-  tmpl, err := template.ParseFiles("app/tmpl/index.tmpl")
-  if err != nil {
-    log.Println(err.Error())
-    http.Error(w, http.StatusText(500), 500)
-    return
-  }
+  m.Get("/", func(r render.Render){
+    r.HTML(200, "index", nil)
+  })
 
-  if err := tmpl.Execute(w, nil); err != nil {
-    log.Println("Error:")
-    log.Println(err.Error())
-    http.Error(w, http.StatusText(500), 500)
-  }
+  m.Run()
 }
