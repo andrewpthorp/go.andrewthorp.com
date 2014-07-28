@@ -1,1 +1,1 @@
-web: andrewthorp
+web: ./andrewthorp
