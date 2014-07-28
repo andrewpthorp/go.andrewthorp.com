@@ -1,1 +1,1 @@
-web: ./andrewthorp
+web: go.andrewthorp.com
