@@ -2,8 +2,8 @@
 
 $body: #FFF;
 $font: #222;
-$linkColor: #3D7B99;
-$linkBackground: #DEDEDE;
+$linkColor: #375EAB;
+$linkBackground: #E0EBF5;
 
 body {
   background: $body;
@@ -28,13 +28,13 @@ div#content {
     list-style-type: none;
     margin-left: 0px;
     li {
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
   }
 
   a {
     background: $linkBackground;
-    border: 3px solid darken($linkColor, 15%);
+    border: 3px solid $linkColor;
     border-width: 0px 0px 3px;
     color: $linkColor;
     padding: 1px 4px 0px;

@@ -4866,7 +4866,7 @@ body {
   background: #FFF; }
 
 hr {
-  border-color: #DEDEDE; }
+  border-color: #E0EBF5; }
 
 h1, h2, h3, h4, h5, h6, p, ul li, ol li {
   color: #222;
@@ -4880,18 +4880,18 @@ div#content ul {
   list-style-type: none;
   margin-left: 0px; }
   div#content ul li {
-    margin-bottom: 3px; }
+    margin-bottom: 4px; }
 div#content a {
-  background: #DEDEDE;
-  border: 3px solid #275062;
+  background: #E0EBF5;
+  border: 3px solid #375EAB;
   border-width: 0px 0px 3px;
-  color: #3D7B99;
+  color: #375EAB;
   padding: 1px 4px 0px; }
   div#content a:hover {
-    background: #3D7B99;
+    background: #375EAB;
     color: white; }
   div#content a:active {
-    border-color: #3D7B99; }
+    border-color: #375EAB; }
   div#content a.pgp {
     margin-left: 8px; }
 div#content footer p {
