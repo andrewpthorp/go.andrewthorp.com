@@ -1,9 +1,9 @@
 @import "../../bower/foundation/scss/foundation";
 
-$body: #F2EDE4;
-$font: #4D4D4D;
-$linkColor: #059E9A;
-$linkBackground: #E2DCCB;
+$body: #FFF;
+$font: #222;
+$linkColor: #3D7B99;
+$linkBackground: #DEDEDE;
 
 body {
   background: $body;
@@ -19,27 +19,31 @@ h1, h2, h3, h4, h5, h6, p, ul li, ol li {
   &#global-header {
     font-size: 1.75em;
     font-size: 1.75rem;
-    margin: 25px 0px 25px;
+    margin: 45px 0px 25px;
   }
 }
 
 div#content {
-  border: 1px solid $linkBackground;
-  border-width: 1px 0px 0px 1px;
-  padding: 15px 0px 15px 25px;
-
   ul {
     list-style-type: none;
     margin-left: 0px;
+    li {
+      margin-bottom: 3px;
+    }
   }
 
   a {
     background: $linkBackground;
+    border: 3px solid darken($linkColor, 15%);
+    border-width: 0px 0px 3px;
     color: $linkColor;
-    padding: 0px 2px;
+    padding: 1px 4px 0px;
     &:hover {
       background: $linkColor;
       color: white;
+    }
+    &:active {
+      border-color: $linkColor;
     }
     &.pgp {
       margin-left: 8px;
